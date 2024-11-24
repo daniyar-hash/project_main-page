@@ -296,7 +296,20 @@ a.catalog-list-title{
 
 
 
+.header_user-and-product-nav li{
+	display: inline-block;
+}
 
+
+.header_user-and-product-nav li img{
+	margin-left:40px;
+}
+.site-navigation li{
+	display: inline-block;
+}
+.site-navigation li a{
+	padding: 0 20px;
+}
 
 
 	/*header----------------------end----------------*/
