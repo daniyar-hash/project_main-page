@@ -12,7 +12,7 @@
 </head>
 <body>
 <header class="main-header container block">
-	<nav class="main-navigation  ">
+	<nav class="main-navigation navbar">
 
 	     <a class="main-header-logo" href="#">
 			<span class="logotype">Device</span>
@@ -20,9 +20,7 @@
 	     <div class="search-and-user-links-wrap ">
 			<div class="search-on-site block">
 				<form action="#"  id="auth" class="input-group" method="get">
-					<i class="search-product-icon">
-					<img src="img/search.svg" alt="Search">
-					</i>
+					<span class="icon search-product-icon"></span>
 					<label for="search-input-word" class="visually-hidden">Поиск по сайту</label>
 					<input type="text" class="form-control" name="search-shop" form="auth" placeholder="Поиск по сайту" id="search-input-word">
 					<button type="submit" form="auth" class="btn btn-search btn-search-submit">Найти</button>
@@ -30,17 +28,24 @@
 			</div>
 			
 			<ul class="header_user-and-product-nav block">
-				<li>
-				 <img src="img/user.svg" alt="User">
-		       		<a class="login-link" href="login.html">Войти</a>
+				<li class="login-item">
+			    		<a class="login-link" href="login.html">
+				    		<span class="icon icon-user"></span>
+				    		<span class="text">Войти</span>
+					</a>
 				</li>
-				<li>
-				  <img src="img/compare.svg" alt="Compare">
-				  <a class="compare-link" href="compare.html">Сравнить</a>
+				<li class="compare-item">
+				  <a class="compare-link" href="compare.html">
+				  	<span class="icon icon-compare"></span>
+				  	<span class="text">Сравнить</span>
+
+				  </a>
 				</li>
-			       <li>
-				  <img src="img/cart.svg" alt="Cart">
-			          <a class="cart-link" href="cart.html">Корзина</a>
+				<li class="cart-item">
+			          <a class="cart-link" href="cart.html">
+				          <span class="icon icon-cart"></span>
+				          <span class="text">Корзина</span>
+			          </a>
 			      </li>
 			</ul>
 		</div>
@@ -82,9 +87,8 @@
 
 
 <div class="column-1 container block">
-	
-	
-			<input type="radio" id="btn1"  name="product" value="number_1"  checked>
+		
+			<input type="radio" id="btn1"  name="product" value="number_1" checked>
 			<input type="radio" id="btn2" name="product" value="number_2">
 			<input type="radio" id="btn3" name="product" value="number_3">
 
