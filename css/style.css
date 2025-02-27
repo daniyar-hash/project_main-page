@@ -225,7 +225,6 @@ body{
   background-color: #f7e296;
   box-sizing: border-box;
   z-index: 1000;
-  border: 1px solid #000;
 
 }
 
@@ -238,7 +237,7 @@ body{
 }
 
 
-.catalog-list-title:hover ~#subMenu
+.catalog-name:hover #subMenu
 	{
 		display: flex;
 		z-index: 100;
@@ -508,6 +507,8 @@ a.catalog-list-title{
     clip: rect(0, 0, 0, 0);
     overflow: hidden;
 	}
+
+
 	img{
 		max-width: 100%;
 		height: auto;
@@ -680,7 +681,7 @@ a.catalog-list-title{
 
 	.number-slider {
 		font-size: 179.2px;
-		line-height: 130.2px;
+		line-height: 136.2px;
 		color: #ffffff;
 		font-family: "Gilroy ExtraBold", Arial, sans-serif;
 
@@ -824,9 +825,7 @@ section.products{
 	margin-bottom: 40px;
 
 }
-.sub-menu.block{
-	border: 1px solid #000;
-}
+
 
 	.table-product tr.second-row,
 	.desc-product span{
@@ -1228,7 +1227,6 @@ section.products{
 	padding: 0;
 	width: 260px;
 	color: #fff;
-	border: 1px solid #000;
 
 }
 
@@ -1245,7 +1243,6 @@ section.products{
 
 	.footer-social-and-services{
 		text-align: center;
-		border: 1px solid #000;
 		width: 440px;
 		display: flex;
 		flex-direction: column;
@@ -1311,7 +1308,7 @@ section.products{
 	background-image: url("../img/cart-footer.svg");
 }
 .address{
-	margin-top: 28px;
+	margin-top: 40px;
 }
 
 
@@ -1368,7 +1365,6 @@ section.products{
 	display: flex;
   flex-direction: column;
   justify-content: space-between;
-	border: 1px solid #000;
 	width: 360px;
 	color: #fff;
 	text-align: right;
@@ -1406,6 +1402,8 @@ section.products{
 	opacity: 0.3;
 }
 
+
+
 .footer_user-navigation a:active{
 	opacity: 0.3;
 }
@@ -1426,64 +1424,229 @@ section.products{
 	opacity: .1;
 }
 
+.footer-coopyright
+{
+	margin-top: -20px;
+}
+
 
 	/*footer-------------end--------------*/
 
 	/*---modal-------------start--------------*/
 
 
+	.modal
+	{
+		position: fixed;
+		color: #000;
+		background-color: #fff;
+		background-position: 0 0;
+		background-repeat: no-repeat;
+		box-shadow:5px 15px 15px 2px  rgba(0, 0, 0, 0.2),
+	  					-5px 5px 15px 2px rgba(0, 0, 0, 0.2);
+
+		
+	}
+
+
+.modal-write_us
+{
+
+		width: 760px;
+		height: 370px;
+		padding: 92px 100px;
+		left: 50%;
+		margin-left: -480px;
+		top: 50%;
+		margin-top: -300px;
+		z-index: 5;
+		font-size: 0;
+
 	
-	
 
-    .modal-form input::placeholder{
-    	letter-spacing: 0em;
-    	font-family: "Open Sans", Arial, sans-serif;
-    	font-size: 14px;
-    	line-height:18px;
-    	color:rgba(70,70,70,0.4);
+}	
+.modal-write_us form
+{
+	width: 760px;
+	font-size: 0;
+}
 
-    }
-    .modal-form input{
-    	outline: unset;
-    	border:none;
-    	background-color: #f2f2f2;
-    }
 
-    .modal-form p:hover input{
-    		background-color: #eaeaea;
-    }
-    .modal-form input:focus{
-    	color:rgba(70,70,70,1);
-    	outline: 2px solid #f7e296;
-    	border: none;
-    	background-color: #ffffff;
-    }
+.modal-write_us form >p:first-child
+{
+	margin-right: 39px;
 
-    .modal-form input.error{
-    	background-color: #f6dada;
-    }
+}
 
-    button.modal-close{
-    	border:none;
-    	background-color: #ffffff;
-    }
-    button.button{
-    display: inline-block;
-		font-family: 'Gilroy ExtraBold', Arial, sans-serif;
-        font-size: 18px;
-		line-height: 24px;
-		font-weight: bold;
-		text-transform: uppercase;
-		letter-spacing: 0.2em;
-		background-image: linear-gradient(transparent 0%, transparent 40%,
-		  #f0c52e 40%,  #f0c52e 60%, transparent 60%, transparent 100% );
-		margin-left: 100px;
-		padding: 10px 5px;		
-		color: #000000;
-		text-align: center;
-		border: none;
-		background-color: transparent;
-    }
+
+.modal-form p
+{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+
+}
+
+
+
+.modal-form label
+{
+	position: absolute;
+	left: 0;
+	top: -33px;
+
+
+}
+
+
+.modal-form label,
+.modal-form input,
+.modal-form textarea
+{
+	font-family: "Gilroy ExtraBold", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+
+}
+
+
+.modal-form p.text-letter
+{
+	margin-top: 60px;
+}
+
+
+
+.modal-form p.text-letter textarea
+{
+	width: 740px;
+  min-height: 140px;
+  padding-left: 20px;
+  padding-top: 14px;
+  border: none;
+  background-color:#f2f2f2; ;
+}
+
+
+.modal-form input::placeholder,
+.modal-form textarea::placeholder
+
+{
+	letter-spacing: 0em;
+	font-family: "Open Sans", Arial, sans-serif;
+	font-size: 14px;
+	line-height:18px;
+	color:rgba(70,70,70,0.4);
+
+}
+.modal-form input{
+	outline: unset;
+	border:none;
+	background-color: #f2f2f2;
+	width: 340px;
+	height: 50px;
+	padding: 0;
+	padding-left: 20px;
+}
+
+.modal-form p:hover input{
+		background-color: #eaeaea;
+}
+.modal-form input:focus{
+	color:rgba(70,70,70,1);
+	outline: 2px solid #f7e296;
+	border: none;
+	background-color: #ffffff;
+}
+
+.modal-form input.error{
+	background-color: #f6dada;
+}
+
+
+button.modal-close
+{
+	position: absolute;
+	width: 55px;
+	height: 55px;
+	border-radius: 50%;
+	right: 27px;
+	top: 27px;
+
+	background-color: #f7e296;
+	border: none;
+
+}
+
+button.modal-close:before
+{
+	content: "";
+	position: absolute;
+	top: 27px;
+	right: 15px;
+  background-color: #fff;
+	width: 25px;
+	height: 3px;
+	transform: rotate(45deg);
+
+}
+button.modal-close:after
+{
+	content: "";
+	position: absolute;
+ 		top: 27px;
+	right: 15px;
+	width: 25px;
+	  background-color: #fff;
+
+	height: 3px;
+	transform: rotate(-45deg);
+}
+
+
+button.button{
+
+display: inline-block;
+font-family: 'Gilroy ExtraBold', Arial, sans-serif;
+    font-size: 18px;
+line-height: 24px;
+font-weight: bold;
+text-transform: uppercase;
+letter-spacing: 0.2em;
+background-image: linear-gradient(transparent 0%, transparent 40%,
+  #f0c52e 40%,  #f0c52e 60%, transparent 60%, transparent 100% );
+margin-left: 100px;
+padding: 10px 5px;		
+color: #000000;
+text-align: center;
+border: none;
+background-color: transparent;
+}
+
+
+.modal-form button
+{
+	margin-top: 55px;
+	margin-left: 0;
+	width: 200px;
+}
+
+
+.modal-map
+{
+	display: none;
+	width: 960px;
+	height: 560px;
+	left: 50%;
+	margin-left: -480px;
+	top: 120px;
+	box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.2);
+	background-image: url(../img/map-big.png);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
 
 
 	/*---modal-------------ends--------------*/
