@@ -1451,7 +1451,7 @@ section.products{
 
 .modal-write_us
 {
-
+		display: none;
 		width: 760px;
 		height: 370px;
 		padding: 92px 100px;
