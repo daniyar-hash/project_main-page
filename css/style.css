@@ -1636,15 +1636,32 @@ background-color: transparent;
 .modal-map
 {
 	display: none;
-	width: 960px;
-	height: 560px;
+	width: 766px;
+	height: 446px;
 	left: 50%;
 	margin-left: -480px;
 	top: 120px;
 	box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.2);
-	background-image: url(../img/map-big.png);
+/*	background-image: url(../img/map-big.png);
 	background-position: 0 0;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat;*/
+}
+
+
+
+
+.modal-show{
+	display:block;
+	animation-name:bounce;
+	animation-duration: .6s;
+	
+}
+
+@keyframes bounce {
+	0% {transform: translateX(-2000px);}
+	70% {transform: translateX(30px);}
+	90% {transform: translateX(-10px);}
+	100% {transform: translateX(0);}
 }
 
 
